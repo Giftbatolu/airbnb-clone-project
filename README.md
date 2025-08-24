@@ -102,3 +102,10 @@ The backend for the Airbnb Clone project is designed to provide a robust and sca
 6. **Database Optimizations:** To ensure performance and scalability, and to improve performance, reduce latency, and ensure the application can scale as the dataset grows.
 7. **API Documentation:** The backend APIs are documented using the OpenAPI standard, making them easy to understand and integrate with. The application uses Django REST Framework to provide RESTful endpoints for standard CRUD operations on users, properties, bookings, and reviews. Additionally, GraphQL is implemented to allow more flexible and efficient data queries tailored to client needs.
 8. **Search and Filtering:** Allows users to search for properties based on criteria such as location, date, price, and rating. This improves user experience by helping them find suitable listings quickly.
+
+## API Security
+1. **Authentication:** All API endpoints require user authentication using token-based methods. This ensures that only verified users can access and interact with protected resources. Authentication is essential for safeguarding personal user information and preventing unauthorized access.
+2. **Authorization:** Role-based access control (RBAC) will be used to restrict certain actions based on user roles.
+3. **Rate Limiting:** Rate limiting will be applied to prevent abuse such as brute-force attacks or denial-of-service (DoS) attempts. This helps maintain application availability and protects against overloading the server with excessive requests.
+4. **Secure Payments:** Payment endpoints will be protected through HTTPS and integrated with secure payment gateways. Securing payment transactions is vital to prevent fraud and protect sensitive financial information.
+5. **Data Validation & Sanitization:** All inputs will be validated and sanitized to prevent common vulnerabilities such as SQL injection and cross-site scripting (XSS). This helps ensure only clean, expected data is processed by the application.
