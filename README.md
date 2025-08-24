@@ -92,3 +92,13 @@ The backend for the Airbnb Clone project is designed to provide a robust and sca
 **Relationships:**
 - A payment is **for one booking**
 - A booking can have **one payment**
+
+## Feature Breakdown
+1. **User Management:** Allows users to register, log in, and manage their profiles. This system handles authentication, stores user details securely, and controls access to different parts of the application based on user roles (e.g., guest vs. host).
+2. **Property Management:** Hosts can list their properties by providing information such as location, description, price, and availability. This feature enables users to browse available accommodations and allows hosts to update or remove listings as needed.
+3. **Booking System:** Enables users to book available properties for specific dates. It prevents double-bookings, handles date validations, and ties each reservation to both the user and the property.
+4. **Review System:** Lets users leave feedback on properties they’ve stayed in, using a rating and optional comment. Reviews help build trust in the platform and provide valuable insights to future guests.
+5. **Payment Processing:** Processes payments for bookings, ensuring secure and trackable transactions. It links each payment to a booking and helps simulate a real-world e-commerce environment within the application.
+6. **Database Optimizations:** To ensure performance and scalability, and to improve performance, reduce latency, and ensure the application can scale as the dataset grows.
+7. **API Documentation:** The backend APIs are documented using the OpenAPI standard, making them easy to understand and integrate with. The application uses Django REST Framework to provide RESTful endpoints for standard CRUD operations on users, properties, bookings, and reviews. Additionally, GraphQL is implemented to allow more flexible and efficient data queries tailored to client needs.
+8. **Search and Filtering:** Allows users to search for properties based on criteria such as location, date, price, and rating. This improves user experience by helping them find suitable listings quickly.
