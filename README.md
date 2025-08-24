@@ -80,7 +80,7 @@ The backend for the Airbnb Clone project is designed to provide a robust and sca
 - A review is **written by one user**
 - A review is **for one property**
 
-### Users
+### Payments
 **Fields:**
 - `id`: Unique payment ID
 - `booking_id`: References the booking being paid for
