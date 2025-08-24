@@ -38,6 +38,7 @@ The backend for the Airbnb Clone project is designed to provide a robust and sca
 - `email`: Email address
 - `password`: Hashed password
 - `created_at`: Account creation date
+
 **Relationships:**
 - A user can **own multiple properties**
 - A user can **make multiple bookings**
