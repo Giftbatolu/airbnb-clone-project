@@ -109,3 +109,16 @@ The backend for the Airbnb Clone project is designed to provide a robust and sca
 3. **Rate Limiting:** Rate limiting will be applied to prevent abuse such as brute-force attacks or denial-of-service (DoS) attempts. This helps maintain application availability and protects against overloading the server with excessive requests.
 4. **Secure Payments:** Payment endpoints will be protected through HTTPS and integrated with secure payment gateways. Securing payment transactions is vital to prevent fraud and protect sensitive financial information.
 5. **Data Validation & Sanitization:** All inputs will be validated and sanitized to prevent common vulnerabilities such as SQL injection and cross-site scripting (XSS). This helps ensure only clean, expected data is processed by the application.
+
+## CI/CD Pipeline
+**Continuous Integration (CI)** and **Continuous Deployment/Delivery (CD)** are practices that automate the process of testing, building, and deploying code. CI/CD pipelines help ensure that new changes to the codebase are automatically tested and deployed with minimal manual intervention, leading to faster and more reliable development workflows.
+For this project, a CI/CD pipeline will:
+- Automatically run tests when code is pushed or a pull request is created.
+- Build and deploy the application to a staging or production environment.
+- Ensure code quality and catch issues early before they reach production.
+
+**Tools Used**
+- **GitHub Actions** – For automating workflows such as testing, linting, and deployment.
+- **Docker** – For containerizing the application, ensuring consistent environments across development, testing, and production.
+- **Hosting Service** – For deploying and hosting the application.
+- **Django test suite** – For running automated tests during the CI phase.
